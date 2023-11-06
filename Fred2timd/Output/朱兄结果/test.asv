@@ -1,0 +1,71 @@
+%%
+clear;
+DISP = load('ODISP.txt');
+MOORINGFORCE = load('ZHUMOORFORCE.txt');
+MOORINGFORCE0 = load('ZHUMOORFORCE0.txt')
+DAMP=load('ZHUDAMPINGFORCE.txt');
+HSRF=load('ZHUHSFORCE.txt');
+RETA=load('ZHUREATFORCE.txt');
+WAVE=load('ZHUWAVEFORCE.txt');
+WIND=load('ZHUWINDFORCE.txt');
+MOO1 = load('ZHUWMOOR1.txt');
+MOO2 = load('ZHUWMOOR2.txt');
+MOO3 = load('ZHUWMOOR3.txt');
+
+MAXDISP = max(abs(DISP));
+MAXMOOR = max(abs(MOORINGFORCE));
+MAXDAMP = max(abs(DAMP));
+MAXHSRF = max(abs(HSRF));
+MAXRETA = max(abs(RETA));
+MAXWAVE = max(abs(WAVE));
+MAXWIND = max(abs(WIND));
+
+for(i= 1:6)
+    figure(i);
+    plot(DISP(:,1),DISP(:,i+1)/MAXDISP(i+1));
+    hold on;
+    plot(DISP(:,1),MOORINGFORCE(:,i)/MAXMOOR(i));
+    plot(DISP(:,1),DAMP(:,i)/MAXDAMP(i));
+    plot(DISP(:,1),HSRF(:,i)/MAXHSRF(i));
+    plot(DISP(:,1),RETA(:,i)/MAXRETA(i));
+    plot(DISP(:,1),WAVE(:,i)/MAXWAVE(i));
+    plot(DISP(:,1),WIND(:,i)/MAXWIND(i));
+    hold off;
+    legend('DISP','MOOR','DAMP','HSRF','RETA','WAVE','WIND','location','best');    
+end
+
+for(i=1:length(DAMP(:,1)))
+    if(MOORINGFORCE(i)==0)
+        BI(i) = 0;
+    else
+        BI(i) = DAMP(i)/MOORINGFORCE(i);
+    end
+end
+
+figure(7);
+plot(DISP(:,1),BI);
+
+figure(8);
+plot(DISP(:,1),DAMP(:,2));
+hold on;
+plot(DISP(:,1),MOORINGFORCE(:,2));
+
+hold off;
+legend('damp','moor');
+
+figure(9);
+hold on;
+for(i=1:3)
+    plot(DISP(:,1),DISP(:,i+1));
+end
+hold off;
+
+for(i=1:length(MOO1(:,1)))
+    MOOR1(i) = sqrt(MOO1(i)^2+MOO1(i)^2)
+    MOOR2(i) = sqrt(MOO2(i)^2+MOO2(i)^2)
+    MOOR3(i) = sqrt(MOO3(i)^2+MOO3(i)^2)
+end
+plot(:,MOOR1);
+
+
+

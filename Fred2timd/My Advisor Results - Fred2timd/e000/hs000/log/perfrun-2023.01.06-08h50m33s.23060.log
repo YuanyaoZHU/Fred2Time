@@ -1,0 +1,85 @@
+79 [15748] INFO perfrun.launcher <> - Launcher main begin
+89 [15748] INFO perfrun.launcher <> - MessageCatalogInit finished
+89 [15748] INFO perfrun.launcher <> - Launcher instance created
+89 [15748] INFO perfrun.launcher <> - argc = 7; cmdline = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\advixe-runss.exe --ui-output-format xml --ui-output-fd 4492 --option-file D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\config\runss.options 
+104 [15748] INFO perfrun.launcher <> - New signal handler callback was added
+238 [15748] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+238 [15748] INFO perfrun.launcher <> - create file finder object
+239 [15748] INFO perfrun.launcher <> - create a result directory: pattern = D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000 pid = 4294967295
+243 [15748] INFO perfrun.launcher <> - create data directory = D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\data.0
+245 [15748] INFO perfrun.launcher <> - Creating the master collection flag
+252 [15748] INFO perfrun.launcher <> - Done creating the master collection flag
+253 [2280] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+254 [2280] INFO perfrun.sdk <> - Allocating TMU :D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\data.0\systemcollector-23060-LAPTOP-PEJP4GA9.sc
+255 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.mrte <> - Disabling mrte collector because mrte-mode option is set as native
+257 [2280] INFO perfrun.launcher <> - plugin [mrte] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+257 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+258 [2280] INFO perfrun.tpss <> - initialize tpss controller
+258 [2280] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+258 [2280] INFO perfrun.tpss <> - default obj-size-min=1024
+258 [2280] INFO perfrun.tpss <> - default hash-table-size=0
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+259 [2280] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+260 [15748] INFO perfrun.launcher <> - set environment variable: PATH = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime;D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime;D:\Program Files (x86)\Intel\oneAPI\compiler\2021.3.0\windows\redist\intel64_win\compiler;D:\Program Files (x86)\Intel\oneAPI\compiler\2021.3.0\windows\..\..\..\mkl\latest\redist\intel64;;D:\SIMULIA\Commands;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\zhuyu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\dotnet\;D:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build;D:\Program Files (x86)\Intel\oneAPI\compiler\2021.3.0\env;C:\Users\zhuyu\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\zhuyu\AppData\Local\Programs\Python\Python39\;C:\Users\zhuyu\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\PyCharm Community Edition 2020.3.4\bin;;D:\Programs\Microsoft VS Code\bin;D:\texlive\2021\bin\win32
+260 [15748] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll
+260 [15748] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+260 [15748] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+260 [15748] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll
+261 [15748] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+261 [15748] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = ittnotify_collector.dll
+261 [15748] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll;D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+261 [15748] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+261 [15748] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+261 [15748] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+261 [15748] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+261 [15748] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+263 [15748] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+321 [15748] INFO perfrun.sdk <> - IProcessUtil: the given executable 'D:\Simulation\Freq2Time\fred2_spar\Fred2timd\x64\Release\Fred2timd.exe' is valid.
+321 [15748] INFO perfrun.launcher <> - Launcher: command line to start before modification = D:\Simulation\Freq2Time\fred2_spar\Fred2timd\x64\Release\Fred2timd.exe
+324 [15748] INFO perfrun.launcher <> - Launcher: command line to start after modification = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\pin.exe -error_file D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\data.0\pinerr.tpsslog -detach_reattach -probe -follow_execv -p32 D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\pin.exe -p64 D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\pin.exe -t64 D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\tpsstool.dll -t D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\tpsstool.dll -server_name tpss_ipc.23060 -prd_dir D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0 -- D:\Simulation\Freq2Time\fred2_spar\Fred2timd\x64\Release\Fred2timd.exe
+324 [15748] INFO perfrun.launcher <> - ProcessCreator object was created
+334 [15748] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+335 [2280] INFO perfrun.itt <> - start itt controller for pid #14020
+336 [2280] INFO perfrun.tpss <> - start tpss controller for pid #14020
+398 [15748] INFO perfrun.launcher <> - Launcher: all plugins were started
+399 [15748] INFO perfrun.launcher <> - DirectoryMonitor object was created
+399 [15748] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+399 [15748] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+399 [15748] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+399 [15748] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+407 [15748] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+71654 [8604] INFO perfrun.launcher <> - Stopping collection by RPC request
+71668 [2280] INFO perfrun.itt <> - stop itt controller
+71668 [2280] INFO perfrun.itt <> - detach itt controller
+71668 [2280] INFO perfrun.tpss <> - stop tpss controller
+71683 [2280] INFO perfrun.sdk <> - De-allocating TMU: D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\data.0\systemcollector-23060-LAPTOP-PEJP4GA9.sc
+71706 [2280] INFO perfrun.system <> - closed the system trace file: D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000\data.0\systemcollector-23060-LAPTOP-PEJP4GA9.sc
+71779 [15748] WARN perfrun.sdk <> - Unexpected exit status - -1073741510, at file: vcs\perfrun1\sdk\src\utils_win.cpp:559
+72146 [8604] WARN perfrun.launcher <> - Cannot send KILL signal to the process with pid #14020 : 拒绝访问。, at file: vcs\perfrun1\launcher\src\signal_handler_win.cpp:83
+72146 [15748] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = -1073741510
+72146 [15748] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+72147 [15748] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+72147 [15748] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+72147 [15748] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+72147 [15748] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs\perfrun1\launcher\src\command_handler.cpp:212
+72148 [15748] INFO perfrun.launcher <> - Application exit code: -1073741510
+72149 [15748] INFO perfrun.launcher <> - Exit code: -1073741510

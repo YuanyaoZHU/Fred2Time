@@ -1,0 +1,6 @@
+      
+       IF (L.EQ.0) THEN           
+        CALL CATENARYSYSTEM( .FALSE., NUMLINES, XCM0, XCM(:,L), FLINE ,FILINE)
+       ELSE
+        CALL CATENARYSYSTEM( .TRUE., NUMLINES, XCM0, XCM(:,L), FLINE ,FILINE)
+       ENDIF 

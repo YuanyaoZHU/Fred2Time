@@ -1,0 +1,18 @@
+-r
+D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000
+--mrte-mode=native
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--itt-config=frame,task,event,counter,model
+--stackwalk=offline
+--type=cpu:stack
+--opencl-trace-mode=default
+--search-dir
+bin=D:\Simulation\Freq2Time\fred2_spar\Fred2timd
+--app-working-dir=D:\Simulation\Freq2Time\fred2_spar\Fred2timd
+--
+D:\Simulation\Freq2Time\fred2_spar\Fred2timd\x64\Release\Fred2timd.exe

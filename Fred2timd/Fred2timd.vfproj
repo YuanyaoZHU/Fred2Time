@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{D9B8A17B-F11A-4537-826C-ADADCCBB788D}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" Optimization="optimizeDisabled" OpenMP="OpenMPParallelCode" Diagnostics="diagnosticsShowAll" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" OpenMP="OpenMPParallelCode"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<Filter Name="Input">
+		<File RelativePath=".\Input\BladeInput.txt"/>
+		<File RelativePath=".\Input\CURVE.txt"/>
+		<File RelativePath=".\Input\DATMASS.txt"/>
+		<File RelativePath=".\Input\InputControl.txt"/>
+		<File RelativePath=".\Input\STKBDMS.txt"/></Filter>
+		<Filter Name="Output">
+		<File RelativePath=".\Output\a0.txt"/>
+		<File RelativePath=".\Output\CATENARY.txt"/>
+		<File RelativePath=".\Output\CheckAero.txt"/>
+		<File RelativePath=".\Output\CheckHydro.txt"/>
+		<File RelativePath=".\Output\CoefPower.txt"/>
+		<File RelativePath=".\Output\CoefTrust.txt"/>
+		<File RelativePath=".\Output\ErrorOutput.txt"/>
+		<File RelativePath=".\Output\GKIJ.txt"/>
+		<File RelativePath=".\Output\InflwWind.txt"/>
+		<File RelativePath=".\Output\JSPTR.txt"/>
+		<File RelativePath=".\Output\MATRX.txt"/>
+		<File RelativePath=".\Output\OACLR.txt"/>
+		<File RelativePath=".\Output\OAINF.txt"/>
+		<File RelativePath=".\Output\ODISP.txt"/>
+		<File RelativePath=".\Output\OFWAVE.txt"/>
+		<File RelativePath=".\Output\OHLTF.txt"/>
+		<File RelativePath=".\Output\ORTAR1.txt"/>
+		<File RelativePath=".\Output\ORTAR2.txt"/>
+		<File RelativePath=".\Output\ORTAR3.txt"/>
+		<File RelativePath=".\Output\ORTAR4.txt"/>
+		<File RelativePath=".\Output\ORTAR5.txt"/>
+		<File RelativePath=".\Output\ORTAR6.txt"/>
+		<File RelativePath=".\Output\OVLCT.txt"/>
+		<File RelativePath=".\Output\OWVHT.txt"/>
+		<File RelativePath=".\Output\RotAccer.txt"/>
+		<File RelativePath=".\Output\RotSpeed.txt"/>
+		<File RelativePath=".\Output\RUNGE4.txt"/>
+		<File RelativePath=".\Output\Thrust.txt"/>
+		<File RelativePath=".\Output\Torque.txt"/></Filter></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\Catenary.f90"/>
+		<File RelativePath=".\Controller.f90"/>
+		<File RelativePath=".\CoordTrans.f90"/>
+		<File RelativePath=".\IncidentWave.f90"/>
+		<File RelativePath=".\LungKuta.f90"/>
+		<File RelativePath=".\Main_Prog.f90"/>
+		<File RelativePath=".\Memryfun.for"/>
+		<File RelativePath=".\mt95_mod.f90"/>
+		<File RelativePath=".\PatclVelct.f90"/>
+		<File RelativePath=".\RelatVelc.f90"/>
+		<File RelativePath=".\Subs_Aero.f90"/>
+		<File RelativePath=".\Subs_Hydro.f90"/>
+		<File RelativePath=".\Ustd_Bem.f90"/>
+		<File RelativePath=".\Var_mods.f90"/>
+		<File RelativePath=".\ViscForce.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>

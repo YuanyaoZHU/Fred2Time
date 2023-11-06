@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri May 30 12:00:56 2014
+        MODULE MATCRS__genmod
+          INTERFACE 
+            SUBROUTINE MATCRS
+            END SUBROUTINE MATCRS
+          END INTERFACE 
+        END MODULE MATCRS__genmod

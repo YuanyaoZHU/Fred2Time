@@ -1,0 +1,31 @@
+
+--RHOW, RHOA --
+1025.0 1.17
+--IFDUCT, IFWAKE --
+.false.  .true. 
+--IFVISC, IFCOUP --
+.true.  .true. 
+--H, HS, IRR --(IRR=1: generate irwave ; IRR=2: read from OWVHT.txt ; ELSE regular wave)
+-130.0  0   0
+--IFWKO, WK --
+  2    13.3
+--BETA, WindDrt, VHub ,Zhub --
+ 0.00  0.00  0.00 90.07
+ --MASSRNA, xRNA --
+ 630291  -1
+--SIMT, NSTP --
+ 1000  2000
+ --Initial Position  --
+ 0.00 0.00 0.00 0.00 0.00 0.00
+ --Initial Force to make Heave=0 --
+ 4600000.0
+ --drag cofficients --(后续删除，目前根据STKBDMS.txt文件输入)
+ 0 0 0 0 0
+ --second order damping --
+ 0.00 0.00 0.00 0.00 0.00 0.00
+ --mooringsystem parameter --(Numlines, RFair, RAnch, DepthAnch, DepthFair)
+ 6 48.5 987.3 130.0 -12.0
+ --mooringline parameter --(LineDiam,LineMassDen,LineUnstrLen,LineSeabedCD,LineEAStff)
+ 0.132 344.86 1000.0 1.0 1400000000.0
+ --mooringline angle(degree) -- (quantity must be consistent with NUMLINES)
+ 175 185 295 305 55 65 

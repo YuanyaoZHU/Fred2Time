@@ -1,0 +1,11 @@
+62 [13060] INFO perfrun.launcher <> - Launcher main begin
+71 [13060] INFO perfrun.launcher <> - MessageCatalogInit finished
+71 [13060] INFO perfrun.launcher <> - Launcher instance created
+71 [13060] INFO perfrun.launcher <> - argc = 9; cmdline = D:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\advixe-runss.exe --ui-output-format xml --ui-output-fd 3944 -r D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000 --command stop 
+85 [13060] INFO perfrun.launcher <> - New signal handler callback was added
+217 [13060] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+218 [13060] INFO perfrun.launcher <> - create file finder object
+218 [13060] INFO perfrun.launcher <> - open the result directory: pattern = D:\Simulation\Freq2Time\fred2_spar\Fred2timd\My Advisor Results - Fred2timd\e000\hs000
+221 [13060] INFO perfrun.launcher <> - RpcClient: IP address = 127.0.0.1; port = 4294952923
+715 [13060] INFO perfrun.launcher <> - Application exit code: 0
+716 [13060] INFO perfrun.launcher <> - Exit code: 0
