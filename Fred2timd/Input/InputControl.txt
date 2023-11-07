@@ -6,7 +6,7 @@
 --IFVISC, IFCOUP --
 .true.  .true. 
 --H, HS, IRR --(IRR=1: generate irwave ; IRR=2: read from OWVHT.txt ; ELSE regular wave)
--130.0  0   0
+-130.0  1   2
 --IFWKO, WK --
   2    13.3
 --BETA, WindDrt, VHub ,Zhub --

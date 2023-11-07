@@ -54,6 +54,8 @@
        
        REAL(8) :: LDAMP_ZHU(6) !ZHU:linear damping
        REAL(8) :: CDAMP_ZHU(6) !ZHU:coefficiency of linear damping
+       REAL(8) :: temp_zhu1 !ZHU:templete value for translation
+       REAL(8) :: temp_zhu2 !ZHU:templete value for rotation
       
    !-------------------------------------------------------------------------------------------------
    ! Input data files for aerodynamics computation...
@@ -259,6 +261,7 @@
       READ(0,*)
       READ(0,*), (LAngle(I),I=1,NUMLINES)
       
+      
       BETA=BETA/180.d0*pi
       WindDrt=WindDrt/180.d0*pi
 
@@ -408,7 +411,7 @@
        DO 920 J=0,L
         FWAVE(I,L)=FWAVE(I,L)+LTF(I,L-J)*ETA(J)*TSP
 920    CONTINUE
-             
+       
       ELSE          
           
        DO 910 I=1,6
@@ -422,10 +425,24 @@
       
       DO 950 L=0,NSTP
         T=TSP*L
+        !temp_zhu1 = SQRT(FWAVE(1,L)*FWAVE(1,L)+FWAVE(2,L)*FWAVE(2,L))
+        !temp_zhu2 = SQRT(FWAVE(4,L)*FWAVE(4,L)+FWAVE(5,L)*FWAVE(5,L))
+        
+        
+        
+        !FWAVE(1,L) = -temp_zhu1*DCOS(BETA)   !ZHU: add incide angle
+        !FWAVE(2,L) = temp_zhu1*DSIN(BETA)   !ZHU: add incide angle
+        
+        !FWAVE(4,L) = -temp_zhu2*DCOS(BETA)
+        !FWAVE(5,L) = -temp_zhu2*DSIN(BETA)
+        
         WRITE(61,1010) T,(BUFR(T,TP)*FWAVE(I,L)/(HS/2.D0),I=1,6)
-950   CONTINUE     
+
+950   CONTINUE  
+      
+      !FWAVE = 1.5*FWAVE
        
-            
+           
    !-------------------------------------------------------------------------------------------------
    ! Solve the motion equation using the 4th-order Runge-Kutta scheme...
    !-------------------------------------------------------------------------------------------------         

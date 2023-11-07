@@ -946,7 +946,8 @@
 
       I         = 1        ! Initialize iteration counter
       FirstIter = .TRUE.   ! Initialize iteration flag
-
+      I         = 1        ! Initialize iteration counter
+      I         = 1        ! Initialize iteration counter
       DO
 
 
@@ -1050,8 +1051,12 @@
 
          ! Check if we have converged on a solution, or restart the iteration, or
          !   Abort if we cannot find a solution:
+         
+         !Print*, I, FirstIter
 
          IF ( ( DABS(dHF) <= DABS(Tol*HF) ) .AND. ( DABS(dVF) <= DABS(Tol*VF) ) )  THEN ! .TRUE. if we have converged; stop iterating! [The converge tolerance, Tol, is a fraction of tension]
+             
+            I=1
 
             EXIT
 
@@ -1090,7 +1095,8 @@
 
          ELSEIF ( ( I == MaxIter )        .AND. ( .NOT. FirstIter         ) )  THEN ! .TRUE. if we've iterated as much as we can take without finding a solution; Abort
 
-            Print*,  ' Iteration not convergent. '// &
+             Print*, I, FirstIter
+             Print*,  ' Iteration not convergent. '// &
                          ' Routine Catenary() cannot solve quasi-static mooring line solution.'  
 
 
